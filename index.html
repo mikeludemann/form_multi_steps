@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="src/style/styles.css">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="src/style/styles.css">
+	</head>
 <body>
-<form id="multiForm" action="#">
-	<h1>Multi form in any steps</h1>
-	<div class="container">
-		<div class="start_pointy_corners step">
-			<p>Name</p>
+	<form id="multiForm" action="#">
+		<h1>Multi form in any steps</h1>
+		<div class="container">
+			<div class="start_pointy_corners step">
+				<p>Name</p>
+			</div>
+			<div class="middle_pointy_corners step">
+				<p>Address</p>
+			</div>
+			<div class="middle_pointy_corners step">
+				<p>Birthday</p>
+			</div>
+			<div class="end_pointy_corners step">
+				<p>Contact</p>
+			</div>
 		</div>
-		<div class="middle_pointy_corners step">
-			<p>Address</p>
+		<div class="tab">
+			<div class="label">First Name:</div>
+			<div><input placeholder="First name" oninput="this.className = ''" name="firstname"></div>
+			<div class="label">Second Name:</div>
+			<div><input placeholder="Last name" oninput="this.className = ''" name="lastname"></div>
 		</div>
-		<div class="middle_pointy_corners step">
-			<p>Birthday</p>
+		<div class="tab">
+			<div class="label">Street:</div>
+			<div><input placeholder="Street" oninput="this.className = ''" name="street"></div>
+			<div class="label">Street Number:</div>
+			<div><input placeholder="Street Number" oninput="this.className = ''" name="streetnumber"></div>
+			<div class="label">Postal Code:</div>
+			<div><input placeholder="Postal Code" oninput="this.className = ''" name="postalcode"></div>
+			<div class="label">City:</div>
+			<div><input placeholder="City" oninput="this.className = ''" name="city"></div>
+			<div class="label">Country:</div>
+			<div><input placeholder="Country" oninput="this.className = ''" name="country"></div>
 		</div>
-		<div class="end_pointy_corners step">
-			<p>Contact</p>
+		<div class="tab">
+			<div class="label">Day:</div>
+			<div><input placeholder="dd" oninput="this.className = ''" name="dd"></div>
+			<div class="label">Month:</div>
+			<div><input placeholder="mm" oninput="this.className = ''" name="nn"></div>
+			<div class="label">Year:</div>
+			<div><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></div>
 		</div>
-	</div>
-	<div class="tab">
-		<div class="label">First Name:</div>
-		<div><input placeholder="First name" oninput="this.className = ''" name="firstname"></div>
-		<div class="label">Second Name:</div>
-		<div><input placeholder="Last name" oninput="this.className = ''" name="lastname"></div>
-	</div>
-	<div class="tab">
-		<div class="label">Street:</div>
-		<div><input placeholder="Street" oninput="this.className = ''" name="street"></div>
-		<div class="label">Street Number:</div>
-		<div><input placeholder="Street Number" oninput="this.className = ''" name="streetnumber"></div>
-		<div class="label">Postal Code:</div>
-		<div><input placeholder="Postal Code" oninput="this.className = ''" name="postalcode"></div>
-		<div class="label">City:</div>
-		<div><input placeholder="City" oninput="this.className = ''" name="city"></div>
-		<div class="label">Country:</div>
-		<div><input placeholder="Country" oninput="this.className = ''" name="country"></div>
-	</div>
-	<div class="tab">
-		<div class="label">Day:</div>
-		<div><input placeholder="dd" oninput="this.className = ''" name="dd"></div>
-		<div class="label">Month:</div>
-		<div><input placeholder="mm" oninput="this.className = ''" name="nn"></div>
-		<div class="label">Year:</div>
-		<div><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></div>
-	</div>
-	<div class="tab">
-		<div class="label">E-Mail:</div>
-		<div><input placeholder="E-Mail" oninput="this.className = ''" name="email"></div>
-		<div class="label">Phone:</div>
-		<div><input placeholder="Phone" oninput="this.className = ''" name="phone"></div>
-		<div class="label">Mobile Phone:</div>
-		<div><input placeholder="Mobil" oninput="this.className = ''" name="mobil"></div>
-	</div>
-	<div id="navButton">
-		<button type="button" id="prevBtn" onclick="goToStep(-1)">Previous</button>
-		<button type="button" id="nextBtn" onclick="goToStep(1)">Next</button>
-	</div>
-</form>
-<script src="src/script/script.js"></script>
+		<div class="tab">
+			<div class="label">E-Mail:</div>
+			<div><input placeholder="E-Mail" oninput="this.className = ''" name="email"></div>
+			<div class="label">Phone:</div>
+			<div><input placeholder="Phone" oninput="this.className = ''" name="phone"></div>
+			<div class="label">Mobile Phone:</div>
+			<div><input placeholder="Mobil" oninput="this.className = ''" name="mobil"></div>
+		</div>
+		<div id="navButton">
+			<button type="button" id="prevBtn" onclick="goToStep(-1)">Previous</button>
+			<button type="button" id="nextBtn" onclick="goToStep(1)">Next</button>
+		</div>
+	</form>
+	<script src="src/script/script.js"></script>
 </body>
 </html>
